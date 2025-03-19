@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../CSS/calculator.css">
+</head>
+
+<body>
+    <h1>SIMPLE CALCULATOR</h1>
+    <input type="text" id="display" disabled>
+    <table>
+        <tr>
+            <td onClick="clearDisplay()">C</td>
+            <td onclick="appendOp('%')">%</td>
+            <td onclick="appendOp('/')">/</td>
+            <td onclick="appendOp('*')">*</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendNum('7')">7</td>
+            <td onclick="appendNum('8')">8</td>
+            <td onclick="appendNum('9')">9</td>
+            <td onclick="appendOp('+')">+</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendNum('4')">4</td>
+            <td onclick="appendNum('5')">5</td>
+            <td onclick="appendNum('6')">6</td>
+            <td onclick="appendOp('-')">-</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendNum('1')">1</td>
+            <td onclick="appendNum('2')">2</td>
+            <td onclick="appendNum('3')">3</td>
+            <td rowspan="2" onclick="displayResult()" style="background-color: bisque;" >=</td>
+        </tr> 
+        <tr>
+            <td colspan="2" onclick="appendNum('0')">0</td>
+            <td onclick="appendNum('.')">.</td>
+        </tr>
+    </table>
+    <script src="../javascript/calculator.js"></script>
+</body>
+
+</html>
